@@ -1,11 +1,13 @@
 ---
-tags: forms, kids, ruby, advanced, challenges
+tags: forms, active record, databases, kids, ruby, advanced, challenges
 language: ruby
-level: 2
+level: 3
 type: challenges
 ---
 
-We need your help to build a Sinatra app for our Flatiron swag online store. 
+## Flatiron Swag Shop!
+
+We desperately need your help building an app for our Flatiron online swag shop. Follow the steps below to get started.
 
 Step 1 - Set up your app and MVC directories.
 
