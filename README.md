@@ -1,3 +1,10 @@
+---
+tags: forms, kids, ruby, advanced, challenges
+language: ruby
+level: 2
+type: challenges
+---
+
 We need your help to build a Sinatra app for our Flatiron swag online store. 
 
 Step 1 - Set up your app and MVC directories.
@@ -39,7 +46,7 @@ Take a look at that swag!
 
 ## Bonus Challenges
 + Add an inventory page that displays the count for each item.
-+ Set up a User model (with attributes for name, email and password) and a sign up and sign in page.
++ Set up a User model (with attributes for name and email) and a sign up page.
 + Set up a Purchase model that will track user's purchases. This table will have two columns - user_id and item_id. Tables like this are called join tables because they connect (or join) objects from other models/tables.
   * You'll also need to set up new ActiveRecord relationships for each model. The purchase model belongs to users and items. The user and item models both have many purchases (this may seem a little strange but just roll with it).
   * Set up a form that lists all the items and allows users to chose how many of each item that they would like to order. Hint: There is a `type="number"` attribute for form inputs. Google it! 
