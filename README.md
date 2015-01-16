@@ -50,9 +50,9 @@ Take a look at that swag!
 + Add an inventory page that displays the count for each item.
 + Set up a User model (with attributes for name and email) and a sign up page.
 + Set up a Purchase model that will track user's purchases. This table will have two columns - user_id and item_id. Tables like this are called join tables because they connect (or join) objects from other models/tables.
-  * You'll also need to set up new ActiveRecord relationships for each model. The purchase model belongs to users and items. The user and item models both have many purchases (this may seem a little strange but just roll with it).
-  * Set up a form that lists all the items and allows users to chose how many of each item that they would like to order. Hint: There is a `type="number"` attribute for form inputs. Google it! 
-  * When the form is submitted, set up your controller to add a new entry in the Purchases table and decrease the items' count.
+  * You'll also need to set up new ActiveRecord relationships for each model. The Purchase model belongs to users and items. The User and Item models both have many purchases (this may seem a little strange but just roll with it).
+  * Set up a form that lists all the items and allows users to chose how many of each item they would like to order. Hint: There is a `type="number"` attribute for form inputs. Google it! 
+  * When the form is submitted, set up your controller to add a new entry in the Purchases table and decrease each items' count.
   * If you've set up your `has_many` and `belongs_to` relationships properly you should also be able to get a list of everything a user has purchased from the store with `@user.purchases`.
   * Welcome to the world of eCommerce!
 
