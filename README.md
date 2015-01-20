@@ -7,7 +7,7 @@ type: challenges
 
 ## Flatiron Swag Shop!
 
-We desperately need your help building an app to sell our sweet Flatiron merchandise. Follow the steps below to get started.
+People love our Flatiron swag so much they are [singing about it](https://docs.google.com/a/flatironschool.com/file/d/0B_qWLnYbXOdPS2tMbHVpOG1GUVE/edit). We desperately need your help building an app to sell our sweet Flatiron merch. Follow the steps below to get started.
 
 Step 1 - Set up your app and MVC directories.
 
