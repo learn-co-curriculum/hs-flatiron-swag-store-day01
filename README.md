@@ -26,7 +26,11 @@ Step 5 - Now for the MVC. In the words of Yeezy, it's all about the models. We'l
 :count
 ```
 
-Set up your Item class with attribute accessors, and `ALL_ITEMS` array to hold instances of all your items and an `self.all` method that will return this array. Then boot up `tux` in your terminal and create some new items. Here are some image urls that you can use for your items:
+Set up your `Item` class with attribute accessors, and `ALL_ITEMS` array to hold `Item` instances (each item should get pushed in the `ALL_ITEMS` array when it is initialized). Also, set up a `self.all` method that will return this array. Take a looks at your Tweet model in the Fwitter project for hints on how to do this.
+
+Step 6 - We've got the M covered, now let's move onto the V. In your views directory create an `items.erb` file that will display all of the merch for our store - including each item's name, photo and price.
+
+Step 7 - Set up your `get '/items'` route to pull all of your items and display them in your new `items.erb` template. You'll also need to create some Items within this route. Here are some image urls that you can use:
 
 + [hat](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hat.jpg
 + [hoodie](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hoodie.jpg)
@@ -36,14 +40,10 @@ Set up your Item class with attribute accessors, and `ALL_ITEMS` array to hold i
 
 You can set your own price and count (how much of the item is in stock) but remember these items are in HIGH demand! 
 
-Step 6 - We've got the M covered, now let's move onto the V. In your views directory create an `items.erb` file that will display all of the merch for our store - including each item's name, photo and price.
-
-Step 7 - Set up your `get '/items'` route to pull all of your items from the database and display them in your new `items.erb` template.
-
-Take a look at that swag!
+Now boot up your server with `rackup`, head to `localhost:9292` and take a look at that swag!
 
 ## Bonus Challenges
 + Set up a form that lists all the items and allows users to chose how many of each item they would like to order. Hint: There is a `type="number"` attribute for form inputs. Google it! 
   * When the form is submitted, the items' inventory (count) should decrease. 
 + Add an inventory page that displays the count for each item.
-  * Add a form to the page that let's you chose and item and increase the count (inventory) for that item.
+  * Add a form to the page that let's you chose an item and increase the inventory (count) for that item.
