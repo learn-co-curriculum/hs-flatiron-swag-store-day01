@@ -9,15 +9,15 @@ type: challenges
 
 People love our Flatiron swag so much they are [singing about it](https://docs.google.com/a/flatironschool.com/file/d/0B_qWLnYbXOdPS2tMbHVpOG1GUVE/edit). We desperately need your help building an app to sell our sweet Flatiron merch. Follow the steps below to get started.
 
-Step 1 - Set up your app and MVC directories.
+**Step 1** - Set up your app and MVC directories.
 
-Step 2 - Set up your config directory with your environment file (Hint: It's totally okay to copy the config file from your Fwitter project, but don't forget to customize it where necessary.)
+**Step 2** - Set up your config directory with your environment file (Hint: It's totally okay to copy the config file from your Fwitter project, but don't forget to customize it where necessary.)
 
-Step 3 - Set up your public directory with directories for css, img and js.
+**Step 3** - Set up your public directory with directories for css, img and js.
 
-Step 4 - Set up your config.ru and Gemfile (totally okay to copy from Fwitter again!)
+**Step 4** - Set up your config.ru and Gemfile (totally okay to copy from Fwitter again!)
 
-Step 5 - Now for the MVC. In the words of Yeezy, it's all about the models. We'll start off with one model for Items with the following attributes:
+**Step 5** - Now for the MVC. In the words of Yeezy, it's all about the models. We'll start off with one model for Items with the following attributes:
 
 ```ruby
 :name
@@ -28,9 +28,9 @@ Step 5 - Now for the MVC. In the words of Yeezy, it's all about the models. We'l
 
 Set up your `Item` class with attribute accessors, and `ALL_ITEMS` array to hold `Item` instances (each item should get pushed in the `ALL_ITEMS` array when it is initialized). Also, set up a `self.all` method that will return this array. Take a looks at your Tweet model in the Fwitter project for hints on how to do this.
 
-Step 6 - We've got the M covered, now let's move onto the V. In your views directory create an `items.erb` file that will display all of the merch for our store - including each item's name, photo and price.
+**Step 6** - We've got the M covered, now let's move onto the V. In your views directory create an `items.erb` file that will display all of the merch for our store - including each item's name, photo and price.
 
-Step 7 - Set up your `get '/items'` route to pull all of your items and display them in your new `items.erb` template. You'll also need to create some Items within this route. Here are some image urls that you can use:
+**Step 7** - Set up your `get '/items'` route to pull all of your items and display them in your new `items.erb` template. You'll also need to create some Items within this route. Here are some image urls that you can use:
 
 + [hat](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hat.jpg)
 + [hoodie](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hoodie.jpg)
