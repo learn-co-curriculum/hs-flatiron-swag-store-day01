@@ -28,7 +28,7 @@ Step 5 - Now for the MVC. In the words of Yeezy, it's all about the models. We'l
 
 Set up your Item class with attribute accessors, and `ALL_ITEMS` array to hold instances of all your items and an `self.all` method that will return this array. Then boot up `tux` in your terminal and create some new items. Here are some image urls that you can use for your items:
 
-+ [hat](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hat.jpg
++ [hat](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hat.jpg)
 + [hoodie](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hoodie.jpg)
 + [men's tee](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_tee_m.jpg)
 + [women's tee](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_tee_w.jpg)
