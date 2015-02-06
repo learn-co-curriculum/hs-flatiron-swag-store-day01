@@ -32,7 +32,7 @@ Step 6 - We've got the M covered, now let's move onto the V. In your views direc
 
 Step 7 - Set up your `get '/items'` route to pull all of your items and display them in your new `items.erb` template. You'll also need to create some Items within this route. Here are some image urls that you can use:
 
-+ [hat](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hat.jpg
++ [hat](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hat.jpg)
 + [hoodie](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hoodie.jpg)
 + [men's tee](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_tee_m.jpg)
 + [women's tee](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_tee_w.jpg)
@@ -44,6 +44,4 @@ Now boot up your server with `rackup`, head to `localhost:9292` and take a look 
 
 ## Bonus Challenges
 + Set up a form that lists all the items and allows users to chose how many of each item they would like to order. Hint: There is a `type="number"` attribute for form inputs. Google it! 
-  * When the form is submitted, the items' inventory (count) should decrease. 
-+ Add an inventory page that displays the count for each item.
-  * Add a form to the page that let's you chose an item and increase the inventory (count) for that item.
+  * When the form is submitted the order total is tallied up and the user is displayed a page with the total cost of the order and the items being ordered.
