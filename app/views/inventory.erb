@@ -1,0 +1,7 @@
+<h2>Item Inventory</h2>
+
+<% @items.each do |item| %>
+  <img src="<%= item.image_url %>">
+  <h3><%= item.name %></h3>
+  <p><strong>Inventory:</strong> $<%= item.count %></p>
+<% end %>

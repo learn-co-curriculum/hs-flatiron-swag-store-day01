@@ -6,22 +6,6 @@ class ApplicationController < Sinatra::Base
   configure do
     set :public_folder, 'public'
     set :views, 'app/views'
-      enable :sessions
-    set :session_secret, 'fwitter'
-  end
-
-  helpers do
-    def signed_in?
-      session[:user_id]
-    end
-
-    def current_user
-      current_user = User.find(session[:user_id])
-    end
-
-    def error
-      session[:error]
-    end
   end
 
   get '/' do
@@ -34,10 +18,9 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/purchases' do
-    @user = User.find_by(:id => session[:user_id])
     @total = 0
     params.each do |item, quantity|
-      item = Item.find_by(name: item)
+      item = Item.find { name: item)
       item.count -= quantity.to_i
       item.save
       if quantity.to_i > 0
