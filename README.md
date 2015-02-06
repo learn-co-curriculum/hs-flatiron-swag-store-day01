@@ -11,7 +11,7 @@ People love our Flatiron swag so much they are [singing about it](https://docs.g
 
 **Step 1** - Set up your app and MVC directories.
 
-**Step 2** - Set up your config directory with your environment file (Hint: It's totally okay to copy the config file from your Fwitter project, but don't forget to customize it where necessary.)
+**Step 2** - Set up your config directory with your environment file (Hint: It's totally okay to copy the environment file from your Fwitter project.)
 
 **Step 3** - Set up your public directory with directories for css, img and js.
 

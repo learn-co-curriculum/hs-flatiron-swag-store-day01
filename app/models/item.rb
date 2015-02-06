@@ -1,5 +1,3 @@
-require './config/environment'
-
 class Item
   attr_accessor :name, :image_url, :price, :count
 
