@@ -9,44 +9,21 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
+    hoodie = Item.new("hoodie", "https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hoodie.jpg", 35.00, 20)
+    tee = Item.new("tee","https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_tee_m.jpg",15.00,30)
+    @items = Item.all
     erb :index  
   end
 
-  get '/items' do
-    @items = Item.all
-    erb :items
-  end
-
   post '/purchases' do
+    @purchases = params
     @total = 0
-    params.each do |item, quantity|
-      item = Item.find { name: item)
-      item.count -= quantity.to_i
-      item.save
-      if quantity.to_i > 0
-        @total += item.price 
-        Purchase.create(user_id: @user.id, item_id: item.id)
-      end
+    @purchases.each do |name, quantity|
+      purchase = Item.all.find { |item| item.name == name }
+      @total += purchase.price * quantity.to_i
     end
+    # binding.pry
     erb :confirmation
-  end
-
-  get '/sign-in' do
-    erb :signin
-  end
-
-  post '/sign-in' do
-    @user = User.find_by(:email => params[:email], :name => params[:name])
-    if @user
-      session[:user_id] = @user.id
-    end
-    redirect '/items'
-  end
-
-  get '/sign-out' do
-    session[:user_id] = nil
-    session[:error] = nil
-    redirect '/items'
   end
 
 end

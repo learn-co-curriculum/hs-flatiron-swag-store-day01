@@ -8,12 +8,6 @@
   <body> 
     <div class="container">
       <h1>Welcome to the Flatiron Swag Store!</h1>
-
-      <% if signed_in? %>
-        <p><%= current_user.name %></a> | <a href="/sign-out">Sign Out</a></p>
-      <% elsif !@signin_page %>
-        <a href="/sign-in">Sign In</a>
-      <% end %>
       
       <%= yield %>
 

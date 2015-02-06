@@ -1,6 +1,6 @@
 require './config/environment'
 
-class Item < ActiveRecord::Base
+class Item
   attr_accessor :name, :image_url, :price, :count
 
   ALL_ITEMS = []

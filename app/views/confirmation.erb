@@ -1,0 +1,8 @@
+<h1>Thanks for making a purchase!</h1>
+
+<h3>You purchased</h3>
+<% @purchases.each do |item, quantity| %>
+  <p><%= quantity %> <%= item %></p>
+<% end %>
+
+<h2>For a total of $<%= @total %>0</h2>
