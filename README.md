@@ -26,7 +26,7 @@ People love our Flatiron swag so much they are [singing about it](https://docs.g
 :count
 ```
 
-Set up your `Item` class with attribute accessors, and `ALL_ITEMS` array to hold `Item` instances (each item should get pushed in the `ALL_ITEMS` array when it is initialized). Also, set up a `self.all` method that will return this array. Take a looks at your Tweet model in the Fwitter project for hints on how to do this.
+Create an `item.rb` file in your models directory and set up your `Item` class with attribute accessors, and an `ALL_ITEMS` array to hold `Item` instances (each item should get pushed into the `ALL_ITEMS` array when it is initialized). Also, set up a `self.all` method that will return this array. Take a looks at your Tweet model in the Fwitter project for hints on how to do this.
 
 **Step 6** - We've got the M covered, now let's move onto the V. In your views directory create an `items.erb` file that will display all of the merch for our store - including each item's name, photo and price.
 
