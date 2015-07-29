@@ -1,9 +1,4 @@
----
-tags: forms, kids, ruby, advanced, challenges
-language: ruby
-level: 2
-type: challenges
----
+
 
 ## Flatiron Swag Shop!
 
