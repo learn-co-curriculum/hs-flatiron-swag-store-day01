@@ -1,11 +1,4 @@
----
-tags: forms, kids, ruby, advanced, challenges
-language: ruby
-level: 2
-type: challenges
----
-
-## Flatiron Swag Shop!
+# Flatiron Swag Shop!
 
 People love our Flatiron swag so much they are [singing about it](https://docs.google.com/a/flatironschool.com/file/d/0B_qWLnYbXOdPS2tMbHVpOG1GUVE/edit). We desperately need your help building an app to sell our sweet Flatiron merch. Follow the steps below to get started.
 
@@ -45,3 +38,5 @@ Now boot up your server with `rackup`, head to `localhost:9292` and take a look 
 ## Bonus Challenges
 + Set up a form that lists all the items and allows users to chose how many of each item they would like to order. Hint: There is a `type="number"` attribute for form inputs. Google it! 
   * When the form is submitted the order total is tallied up and the user is displayed a page with the total cost of the order and the items being ordered.
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-flatiron-swag-store-day01' title='Flatiron Swag Shop!'>Flatiron Swag Shop!</a> on Learn.co and start learning to code for free.</p>
